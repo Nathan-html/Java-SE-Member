@@ -14,10 +14,10 @@ public class Member {
 	}
 	
 	public String toString() {
-		return "\r\n"
-				+ "Member{id="+this.getId()
-				+ ", firstName="+this.getFirstName()
-				+ ", lastName="+this.getLastName()+"}";
+		return "Member{"
+		+"id="+this.getId()
+		+ ", firstName="+this.getFirstName()
+		+ ", lastName="+this.getLastName()+"}";
 	}
 	
 	public String getLastName() {
