@@ -9,15 +9,16 @@ public class Member {
 	public Member(int id, String firstName, String lastName) {
 		
 		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
+		setFirstName(firstName);
+		setLastName(lastName);
 	}
 	
 	public String toString() {
 		return "Member{"
 		+"id="+this.getId()
 		+ ", firstName="+this.getFirstName()
-		+ ", lastName="+this.getLastName()+"}";
+		+ ", lastName="+this.getLastName()+""
+		+ "}";
 	}
 	
 	public String getLastName() {

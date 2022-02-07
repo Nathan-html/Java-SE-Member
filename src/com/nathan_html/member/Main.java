@@ -18,7 +18,9 @@ public class Main {
 		members.add(jane);
 		members.add(mick);
 		
-		System.out.println("l'id de john : "+john.getId()+" et son nom : "+john.getLastName());
+		System.out.println(
+				"l'id de john : "+john.getId()+
+				" et son nom : "+john.getLastName());
 		
 		for (Object member : members) {
 			System.out.println(member.toString());
