@@ -7,17 +7,17 @@ public class Member {
 	private String lastName;
 	
 	public Member(int id, String firstName, String lastName) {
-		
 		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.setFirstName(firstName);
+		this.setLastName(lastName);
 	}
 	
 	public String toString() {
 		return "Member{"
-		+"id="+this.getId()
-		+ ", firstName="+this.getFirstName()
-		+ ", lastName="+this.getLastName()+"}";
+			+ "id="+this.getId()
+			+ ", firstName="+this.getFirstName()
+			+ ", lastName="+this.getLastName()
+			+ "}";
 	}
 	
 	public String getLastName() {
