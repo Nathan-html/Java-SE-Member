@@ -6,10 +6,18 @@ public class Member {
 	private String firstName;
 	private String lastName;
 	
-	public Member(String firstName, String lastName) {
+	public Member(int id, String firstName, String lastName) {
+		
+		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		
+	}
+	
+	public String toString() {
+		return "\r\n"
+				+ "Member{id="+this.getId()
+				+ ", firstName="+this.getFirstName()
+				+ ", lastName="+this.getLastName()+"}";
 	}
 	
 	public String getLastName() {
